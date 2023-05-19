@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+    <head></head>
+    <main>
+        <div class="test">
+            <div class="container">
+                <form class="form" onsubmit="sendEmail(); reset() ; return false">
+                    <h3>GET IN TOUCH</h3>
+                    <input type="text" id="name" placeholder="Your name" value="" >
+                    <input type="email" id="email" placeholder="Email id" value="" >
+                    <input type="text" id="phone" placeholder="Phone Number" value="" >
+                    <textarea  id="message" rows="4" placeholder="how can we help you" ></textarea>
+                    <button type="submit">Send</button>                
+                </form>
+            </div>
+        </div>
+    </main>    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            let valueName = document.getElementById("name").value;
+            let valueEmail = document.getElementById("email").value;
+            let valuePhone = document.getElementById("phone").value;
+            let valueMessage = document.getElementById("message").value;
+
+                Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "phamduc3499@gmail.com",
+                Password : "650261EAA0E1D3F4EBDBD0D4E9298CBDCCB6",
+                To : "ducpv@beetsoft.com.vn",
+                From : "phamduc3499@gmail.com",
+                Subject : "New contact Form Enquiry",
+                Body : "Name :" + valueName + "<br> Email : " + valueEmail +  "<br> Phone : " + valuePhone + "<br> Message : "  + valueMessage
+                }).then(
+                message => alert(message)
+            );
+        }
+    </script>
+    <script src="./main.js"></script>
+</body>
+</html>

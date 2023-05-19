@@ -1,0 +1,16 @@
+Tài Liệu tham khảo:
+https://www.youtube.com/watch?v=6cdqwkDtAkc
+
+Phần Url Set Smtp
+https://app.elasticemail.com/login
+
+Tài khoản phamduc3499@gmail.com
+
+Username
+phamduc3499@gmail.com
+
+Password
+650261EAA0E1D3F4EBDBD0D4E9298CBDCCB6
+
+Sever/Host(trong code)
+smtp.elasticemail.com
