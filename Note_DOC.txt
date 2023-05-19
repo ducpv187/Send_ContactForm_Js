@@ -14,3 +14,6 @@ Password
 
 Sever/Host(trong code)
 smtp.elasticemail.com
+
+Token
+733e75e1-90c9-4440-b2f5-84fb0b3eb9a3
