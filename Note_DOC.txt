@@ -17,3 +17,8 @@ smtp.elasticemail.com
 
 Token
 733e75e1-90c9-4440-b2f5-84fb0b3eb9a3
+
+
+ducpv.se@gmail.com
+
+2AE299D03AA85AF6236E2C8A38CA0F0D150C
